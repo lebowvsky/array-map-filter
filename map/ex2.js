@@ -40,10 +40,15 @@ Expected OUTPUT for this sample
     'Chick Pea is suitable for vegetarians'
   ]
 
+
 */
 
 function getFoodCategories(foods) {
+  return foods.map(elt => {
+    return elt.isVegetarian ? elt.food + " is suitable for vegetarians" : elt.food + " is not suitable for vegetarians";
+  })
 }
+
 
 
 
